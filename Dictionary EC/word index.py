@@ -28,13 +28,13 @@ for line in infile:
             num_man += 1 
 
 
-BookofJohn = ['Father': num_Father,
+BookofJohn = {'Father': num_Father,
 'God': num_God,
 'Christ': num_Christ,
 'Spirit': num_Spirit,
 'spirit': num_spirit,
 'life': num_life,
-'man': num_man]
+'man': num_man}
 
 
 for key, value in BookofJohn.items():
