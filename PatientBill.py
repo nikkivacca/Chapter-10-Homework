@@ -4,14 +4,8 @@ import PatientClass as pc
 def main():
 
 
-    patient = pc.Patient(patient_ID, name, address, phone, veteran_status)
-    patient_ID = 1
-    name= "Matt Jones"
-    address = "123 Main St, Waco, TX 76706"
-    phone = "254-555-7415"
-    veteran_status = "TRUE"
-
-
+    patient = pc.Patient(1, "Matt Jones", "123 Main St, Waco, TX 76706", "234-555-7415", "TRUE")
+ 
     physical_exam = pr.Procedure("Physical Exam", "2/15/2022", "Dr.Irvine", 250, 1)
 
     MRI_exam = pr.Procedure("MRI", "2/15/2022", "Dr.Hamilton", 1500, 1)
@@ -19,7 +13,7 @@ def main():
     CT_scan = pr.Procedure("CT Scan", "2/15/2022", "Dr.Drey", 1200, 2)
 
 
-    print("*** Patient Bill ***")
+    print("\n*** Patient Bill ***")
     print(patient)
     print()
     print(physical_exam)
@@ -27,4 +21,6 @@ def main():
     print(MRI_exam)
     print()
     print(CT_scan)
-
+    print() 
+    print("Total charge is: " + (physical_exam.charge + MRI_exam.charge + CT_scan.charge))
+main()

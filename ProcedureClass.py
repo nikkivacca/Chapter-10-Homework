@@ -25,4 +25,4 @@ class Procedure:
 
 
     def __str__(self):
-        return "\nProcedure: " + self.__proc_name + "\nDate: " + self.__date + "\nPractitioner: " + self.__practitioner + "\nCharge: " + format()
+        return "\nProcedure: " + self.__proc_name + "\nDate: " + self.__date + "\nPractitioner: " + self.__practitioner + "\nCharge: " + ("${:,.2f}".format(self.__charge))
