@@ -23,6 +23,3 @@ class Procedure:
     def get_patient_ID(self):
         return self.__patient_ID
 
-
-    def __str__(self):
-        return "\nProcedure: " + self.__proc_name + "\nDate: " + self.__date + "\nPractitioner: " + self.__practitioner + "\nCharge: " + ("${:,.2f}".format(self.__charge))

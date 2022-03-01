@@ -22,5 +22,4 @@ class Patient:
     def get_veteran_status(self):
         return self.__veteran_status
 
-    def __str__(self):
-        return "Name: " + self.__name + "\nAddress: " + self.__address + "\nPhone: " +  self.__phone
+  
