@@ -23,9 +23,9 @@ def main():
     for a in procedures_list:
         if a.get_patient_ID() == patient.get_ID():
             print()
-            print("Procedure: ", a.get_proc_name)
-            print("Date: ", a.get_date)
-            print("Practitioner: ", a.get_practitioner)
+            print("Procedure: ", a.get_proc_name())
+            print("Date: ", a.get_date())
+            print("Practitioner: ", a.get_practitioner())
             print("Charge: $", format(a.get_charge(), ',.2f'))
             print()
             total_charge += a.get_charge()
